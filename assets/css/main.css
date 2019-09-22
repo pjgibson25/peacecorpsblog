@@ -2469,6 +2469,14 @@ input, select, textarea {
 			transform: rotate(270deg);
 			}
 
+		.rotateimg0 {
+                        -webkit-transform:rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                        }
+		
 		.rotateimg180 {
                         -webkit-transform:rotate(180deg);
                         -moz-transform: rotate(180deg);
