@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Roses - People</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">PJ-Blog</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../months.html">Month-by-Month</a></li>
+								<li><a href="../pics.html">Pictures</a></li>
+								<li><a href="../site.html">My Site/Job</a></li>
+								<li><a href="../roses.html">Roses & Thorns</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						
+						<header>
+                                                        <div class="inner">
+                                                                <h2>People</h2>
+                                                        </div>
+                                                </header>
+
+
+						<div class="wrapper">
+                                                                <div class="inner">
+
+                                                                        <section>
+                                                                                <div class="box alt">
+                                                                                        <div class="row gtr-uniform">
+                                                                                <div class="col-12"><span class="image fit"><img src="../images/month1/Random Memories/18.jpg" alt="" /></span></div>
+                                                                                <h4>Here is a picture of myself alongside some of my friends and fellow coworkers at Tosamaganga.  They make my experience so much more enjoyable.</h4>
+                                                                        </section>
+                                                                </div>
+                                                </div>
+
+						<!-- Content -->
+
+									<h3 class="major">Volunteers</h3>
+									<p>Out of all of the communities that I have been a part of, the Peace Corps Tanzania community stands alone.  Most volunteers are not only friendly but also incredibly interesting.  They come from all over the United States, even a few duel-citizenship citizens who have lived their whole life abroad.  Here, I’ll highlight some of the volunteers that have had a large impact on my experience.</p>
+
+									
+
+									<h3 class="major">Week 2</h3>
+                                                                        <p>Write</p>
+
+									<h3 class="major">Week 3</h3>
+                                                                        <p>Write</p>
+
+									<h3 class="major">Week 4</h3>
+                                                                        <p>Write</p>
+
+					</section>
+
+				<!-- Footer -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
