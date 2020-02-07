@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 8px 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+<!-- PART0 -->
+<h2 style="text-align:center">month5</h2>
+<!-- PART0 -->
+<!-- PART1 -->
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/IMG_0607.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/XENW2048.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/IMG_0635.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/IMG_0608.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/IMG_0606.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/school/IMG_0638.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/site on the weekend!/IMG_0634.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/site on the weekend!/IMG_0660.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/site on the weekend!/VCTJ6813.JPG" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0643.JPG" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0656.JPG" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/HBCV0896.JPG" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/FGFG2644.JPG" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0649.JPG" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0646.JPG" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0645.JPG" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0639.JPG" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0640.JPG" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/the day/IMG_0650.JPG" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0563.JPG" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0562.JPG" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0546.JPG" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0560.JPG" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0557.JPG" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0555.JPG" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0566.JPG" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0545.JPG" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0565.JPG" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0550.JPG" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0570.JPG" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0543.JPG" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/LLHG8004.JPG" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0552.JPG" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month5/visiting vern!/IMG_0559.JPG" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+  </div>
+<!-- PART1 -->
+
+<!-- Wrapper -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+<!-- PART2 -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 35</div>
+      <img src="../images/month5/school/IMG_0607.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 35</div>
+      <img src="../images/month5/school/XENW2048.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 35</div>
+      <img src="../images/month5/school/IMG_0635.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 35</div>
+      <img src="../images/month5/school/IMG_0608.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 35</div>
+      <img src="../images/month5/school/IMG_0606.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 35</div>
+      <img src="../images/month5/school/IMG_0638.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 35</div>
+      <img src="../images/month5/site on the weekend!/IMG_0634.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 35</div>
+      <img src="../images/month5/site on the weekend!/IMG_0660.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 35</div>
+      <img src="../images/month5/site on the weekend!/VCTJ6813.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 35</div>
+      <img src="../images/month5/the day/IMG_0643.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 35</div>
+      <img src="../images/month5/the day/IMG_0656.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 35</div>
+      <img src="../images/month5/the day/HBCV0896.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 35</div>
+      <img src="../images/month5/the day/FGFG2644.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 35</div>
+      <img src="../images/month5/the day/IMG_0649.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 35</div>
+      <img src="../images/month5/the day/IMG_0646.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 35</div>
+      <img src="../images/month5/the day/IMG_0645.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 35</div>
+      <img src="../images/month5/the day/IMG_0639.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 35</div>
+      <img src="../images/month5/the day/IMG_0640.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 35</div>
+      <img src="../images/month5/the day/IMG_0650.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">20 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0563.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">21 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0562.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">22 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0546.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">23 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0560.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">24 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0557.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">25 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0555.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">26 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0566.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">27 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0545.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">28 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0565.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">29 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0550.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">30 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0570.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">31 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0543.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">32 / 35</div>
+      <img src="../images/month5/visiting vern!/LLHG8004.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">33 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0552.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">34 / 35</div>
+      <img src="../images/month5/visiting vern!/IMG_0559.JPG" style="width:100%">
+    </div>
+<!-- PART2 -->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<!-- PART3 -->
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/IMG_0607.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/XENW2048.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/IMG_0635.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/IMG_0608.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/IMG_0606.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/school/IMG_0638.JPG" style="width:100%" onclick="currentSlide(1)" alt="school">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/site on the weekend!/IMG_0634.JPG" style="width:100%" onclick="currentSlide(1)" alt="site on the weekend!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/site on the weekend!/IMG_0660.JPG" style="width:100%" onclick="currentSlide(1)" alt="site on the weekend!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/site on the weekend!/VCTJ6813.JPG" style="width:100%" onclick="currentSlide(1)" alt="site on the weekend!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0643.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0656.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/HBCV0896.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/FGFG2644.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0649.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0646.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0645.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0639.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0640.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/the day/IMG_0650.JPG" style="width:100%" onclick="currentSlide(1)" alt="the day">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0563.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0562.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0546.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0560.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0557.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0555.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0566.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0545.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0565.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0550.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0570.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0543.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/LLHG8004.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0552.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month5/visiting vern!/IMG_0559.JPG" style="width:100%" onclick="currentSlide(1)" alt="visiting vern!">
+    </div>
+<!-- PART3 -->
+  </div>
+</div>
+<!-- Wrapper -->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+

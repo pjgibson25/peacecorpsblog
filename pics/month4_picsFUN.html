@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 8px 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+<!-- PART0 -->
+<h2 style="text-align:center">month4</h2>
+<!-- PART0 -->
+<!-- PART1 -->
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Arusha/IMG_1765.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Arusha/IMG_1757.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Arusha/IMG_1766.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Arusha/IMG_1746.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/GWXR6490.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/IMG_0346.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/HDRE9085.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/IMG_0344.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/IMG_0347.JPG" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Tanga/IMG_0355.JPG" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Korogwe/IMG_0338.JPG" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Korogwe/IMG_0331.JPG" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Korogwe/IMG_0326.JPG" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Korogwe/IMG_0335.JPG" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/LHDP0239.JPG" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/NTCU3495.JPG" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/IMG_1734.JPG" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/PELA6557.JPG" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/TGDW2392.JPG" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/VJRW0832.JPG" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/XYAS0567.JPG" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/UIUJ7758.JPG" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/WUYR8362.JPG" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/IMG_1725.JPG" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/LPIT7159.JPG" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/QHFY1418.JPG" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/WQDU6335.JPG" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/ETTL6202.JPG" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/UXXR7122.JPG" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/VZIJ6772.JPG" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Moshi/MALX3201.JPG" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02970.JPG" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02972.JPG" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02971.JPG" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02964.JPG" style="width:100%" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02958.JPG" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02965.JPG" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02960.JPG" style="width:100%" onclick="openModal();currentSlide(38)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02954.JPG" style="width:100%" onclick="openModal();currentSlide(39)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02967.JPG" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02952.JPG" style="width:100%" onclick="openModal();currentSlide(41)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02959.JPG" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02962.JPG" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02951.JPG" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02956.JPG" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02953.JPG" style="width:100%" onclick="openModal();currentSlide(46)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02957.JPG" style="width:100%" onclick="openModal();currentSlide(47)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month4/Vern Visit :)/DSC02955.JPG" style="width:100%" onclick="openModal();currentSlide(48)" class="hover-shadow cursor">
+  </div>
+<!-- PART1 -->
+
+<!-- Wrapper -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+<!-- PART2 -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 49</div>
+      <img src="../images/month4/Arusha/IMG_1765.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 49</div>
+      <img src="../images/month4/Arusha/IMG_1757.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 49</div>
+      <img src="../images/month4/Arusha/IMG_1766.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 49</div>
+      <img src="../images/month4/Arusha/IMG_1746.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 49</div>
+      <img src="../images/month4/Tanga/GWXR6490.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 49</div>
+      <img src="../images/month4/Tanga/IMG_0346.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 49</div>
+      <img src="../images/month4/Tanga/HDRE9085.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 49</div>
+      <img src="../images/month4/Tanga/IMG_0344.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 49</div>
+      <img src="../images/month4/Tanga/IMG_0347.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 49</div>
+      <img src="../images/month4/Tanga/IMG_0355.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 49</div>
+      <img src="../images/month4/Korogwe/IMG_0338.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 49</div>
+      <img src="../images/month4/Korogwe/IMG_0331.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 49</div>
+      <img src="../images/month4/Korogwe/IMG_0326.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 49</div>
+      <img src="../images/month4/Korogwe/IMG_0335.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 49</div>
+      <img src="../images/month4/Moshi/LHDP0239.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 49</div>
+      <img src="../images/month4/Moshi/NTCU3495.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 49</div>
+      <img src="../images/month4/Moshi/IMG_1734.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 49</div>
+      <img src="../images/month4/Moshi/PELA6557.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 49</div>
+      <img src="../images/month4/Moshi/TGDW2392.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">20 / 49</div>
+      <img src="../images/month4/Moshi/VJRW0832.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">21 / 49</div>
+      <img src="../images/month4/Moshi/XYAS0567.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">22 / 49</div>
+      <img src="../images/month4/Moshi/UIUJ7758.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">23 / 49</div>
+      <img src="../images/month4/Moshi/WUYR8362.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">24 / 49</div>
+      <img src="../images/month4/Moshi/IMG_1725.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">25 / 49</div>
+      <img src="../images/month4/Moshi/LPIT7159.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">26 / 49</div>
+      <img src="../images/month4/Moshi/QHFY1418.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">27 / 49</div>
+      <img src="../images/month4/Moshi/WQDU6335.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">28 / 49</div>
+      <img src="../images/month4/Moshi/ETTL6202.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">29 / 49</div>
+      <img src="../images/month4/Moshi/UXXR7122.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">30 / 49</div>
+      <img src="../images/month4/Moshi/VZIJ6772.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">31 / 49</div>
+      <img src="../images/month4/Moshi/MALX3201.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">32 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02970.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">33 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02972.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">34 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02971.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">35 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02964.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">36 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02958.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">37 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02965.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">38 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02960.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">39 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02954.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">40 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02967.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">41 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02952.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">42 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02959.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">43 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02962.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">44 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02951.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">45 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02956.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">46 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02953.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">47 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02957.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">48 / 49</div>
+      <img src="../images/month4/Vern Visit :)/DSC02955.JPG" style="width:100%">
+    </div>
+<!-- PART2 -->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<!-- PART3 -->
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Arusha/IMG_1765.JPG" style="width:100%" onclick="currentSlide(1)" alt="Arusha">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Arusha/IMG_1757.JPG" style="width:100%" onclick="currentSlide(1)" alt="Arusha">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Arusha/IMG_1766.JPG" style="width:100%" onclick="currentSlide(1)" alt="Arusha">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Arusha/IMG_1746.JPG" style="width:100%" onclick="currentSlide(1)" alt="Arusha">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/GWXR6490.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/IMG_0346.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/HDRE9085.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/IMG_0344.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/IMG_0347.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Tanga/IMG_0355.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tanga">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Korogwe/IMG_0338.JPG" style="width:100%" onclick="currentSlide(1)" alt="Korogwe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Korogwe/IMG_0331.JPG" style="width:100%" onclick="currentSlide(1)" alt="Korogwe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Korogwe/IMG_0326.JPG" style="width:100%" onclick="currentSlide(1)" alt="Korogwe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Korogwe/IMG_0335.JPG" style="width:100%" onclick="currentSlide(1)" alt="Korogwe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/LHDP0239.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/NTCU3495.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/IMG_1734.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/PELA6557.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/TGDW2392.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/VJRW0832.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/XYAS0567.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/UIUJ7758.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/WUYR8362.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/IMG_1725.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/LPIT7159.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/QHFY1418.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/WQDU6335.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/ETTL6202.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/UXXR7122.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/VZIJ6772.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Moshi/MALX3201.JPG" style="width:100%" onclick="currentSlide(1)" alt="Moshi">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02970.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02972.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02971.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02964.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02958.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02965.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02960.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02954.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02967.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02952.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02959.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02962.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02951.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02956.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02953.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02957.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month4/Vern Visit :)/DSC02955.JPG" style="width:100%" onclick="currentSlide(1)" alt="Vern Visit :)">
+    </div>
+<!-- PART3 -->
+  </div>
+</div>
+<!-- Wrapper -->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+

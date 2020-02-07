@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 8px 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+<!-- PART0 -->
+<h2 style="text-align:center">month3</h2>
+<!-- PART0 -->
+<!-- PART1 -->
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0171.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0202.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0166.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0173.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0182.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0168.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0188.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0175.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0179.JPG" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0169.JPG" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/EST/IMG_0190.JPG" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1652.JPG" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_0224.JPG" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02949.JPG" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02932.JPG" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02928.JPG" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02950.JPG" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02941.JPG" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1662.JPG" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1639.JPG" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02924.JPG" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02947.JPG" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1663.JPG" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1625.JPG" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1627.JPG" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02945.JPG" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1634.JPG" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1601.JPG" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1626.JPG" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02920.JPG" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02943.JPG" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02946.JPG" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02918.JPG" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_0223.JPG" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02921.JPG" style="width:100%" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1659.JPG" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02923.JPG" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02919.JPG" style="width:100%" onclick="openModal();currentSlide(38)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02922.JPG" style="width:100%" onclick="openModal();currentSlide(39)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02931.JPG" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1623.JPG" style="width:100%" onclick="openModal();currentSlide(41)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1624.JPG" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02940.JPG" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02937.JPG" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02939.JPG" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_0225.JPG" style="width:100%" onclick="openModal();currentSlide(46)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02913.JPG" style="width:100%" onclick="openModal();currentSlide(47)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1566.JPG" style="width:100%" onclick="openModal();currentSlide(48)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_0227.JPG" style="width:100%" onclick="openModal();currentSlide(49)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_0226.JPG" style="width:100%" onclick="openModal();currentSlide(50)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/IMG_1650.JPG" style="width:100%" onclick="openModal();currentSlide(51)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Gombe/DSC02929.JPG" style="width:100%" onclick="openModal();currentSlide(52)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_0215.JPG" style="width:100%" onclick="openModal();currentSlide(53)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1664.JPG" style="width:100%" onclick="openModal();currentSlide(54)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1688.JPG" style="width:100%" onclick="openModal();currentSlide(55)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1700.JPG" style="width:100%" onclick="openModal();currentSlide(56)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1708.JPG" style="width:100%" onclick="openModal();currentSlide(57)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_0216.JPG" style="width:100%" onclick="openModal();currentSlide(58)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/QFEI0484.JPG" style="width:100%" onclick="openModal();currentSlide(59)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1711.JPG" style="width:100%" onclick="openModal();currentSlide(60)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_0213.JPG" style="width:100%" onclick="openModal();currentSlide(61)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1665.JPG" style="width:100%" onclick="openModal();currentSlide(62)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_0217.JPG" style="width:100%" onclick="openModal();currentSlide(63)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1691.JPG" style="width:100%" onclick="openModal();currentSlide(64)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_1709.JPG" style="width:100%" onclick="openModal();currentSlide(65)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/IMG_0214.JPG" style="width:100%" onclick="openModal();currentSlide(66)" class="hover-shadow cursor">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/month3/Kigoma/YFGZ5518.JPG" style="width:100%" onclick="openModal();currentSlide(67)" class="hover-shadow cursor">
+  </div>
+<!-- PART1 -->
+
+<!-- Wrapper -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+<!-- PART2 -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 68</div>
+      <img src="../images/month3/EST/IMG_0171.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 68</div>
+      <img src="../images/month3/EST/IMG_0202.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 68</div>
+      <img src="../images/month3/EST/IMG_0166.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 68</div>
+      <img src="../images/month3/EST/IMG_0173.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 68</div>
+      <img src="../images/month3/EST/IMG_0182.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 68</div>
+      <img src="../images/month3/EST/IMG_0168.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 68</div>
+      <img src="../images/month3/EST/IMG_0188.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 68</div>
+      <img src="../images/month3/EST/IMG_0175.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 68</div>
+      <img src="../images/month3/EST/IMG_0179.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 68</div>
+      <img src="../images/month3/EST/IMG_0169.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 68</div>
+      <img src="../images/month3/EST/IMG_0190.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1652.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 68</div>
+      <img src="../images/month3/Gombe/IMG_0224.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 68</div>
+      <img src="../images/month3/Gombe/DSC02949.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 68</div>
+      <img src="../images/month3/Gombe/DSC02932.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 68</div>
+      <img src="../images/month3/Gombe/DSC02928.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 68</div>
+      <img src="../images/month3/Gombe/DSC02950.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 68</div>
+      <img src="../images/month3/Gombe/DSC02941.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1662.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">20 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1639.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">21 / 68</div>
+      <img src="../images/month3/Gombe/DSC02924.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">22 / 68</div>
+      <img src="../images/month3/Gombe/DSC02947.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">23 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1663.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">24 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1625.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">25 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1627.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">26 / 68</div>
+      <img src="../images/month3/Gombe/DSC02945.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">27 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1634.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">28 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1601.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">29 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1626.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">30 / 68</div>
+      <img src="../images/month3/Gombe/DSC02920.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">31 / 68</div>
+      <img src="../images/month3/Gombe/DSC02943.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">32 / 68</div>
+      <img src="../images/month3/Gombe/DSC02946.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">33 / 68</div>
+      <img src="../images/month3/Gombe/DSC02918.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">34 / 68</div>
+      <img src="../images/month3/Gombe/IMG_0223.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">35 / 68</div>
+      <img src="../images/month3/Gombe/DSC02921.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">36 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1659.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">37 / 68</div>
+      <img src="../images/month3/Gombe/DSC02923.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">38 / 68</div>
+      <img src="../images/month3/Gombe/DSC02919.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">39 / 68</div>
+      <img src="../images/month3/Gombe/DSC02922.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">40 / 68</div>
+      <img src="../images/month3/Gombe/DSC02931.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">41 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1623.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">42 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1624.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">43 / 68</div>
+      <img src="../images/month3/Gombe/DSC02940.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">44 / 68</div>
+      <img src="../images/month3/Gombe/DSC02937.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">45 / 68</div>
+      <img src="../images/month3/Gombe/DSC02939.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">46 / 68</div>
+      <img src="../images/month3/Gombe/IMG_0225.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">47 / 68</div>
+      <img src="../images/month3/Gombe/DSC02913.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">48 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1566.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">49 / 68</div>
+      <img src="../images/month3/Gombe/IMG_0227.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">50 / 68</div>
+      <img src="../images/month3/Gombe/IMG_0226.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">51 / 68</div>
+      <img src="../images/month3/Gombe/IMG_1650.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">52 / 68</div>
+      <img src="../images/month3/Gombe/DSC02929.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">53 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_0215.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">54 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1664.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">55 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1688.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">56 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1700.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">57 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1708.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">58 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_0216.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">59 / 68</div>
+      <img src="../images/month3/Kigoma/QFEI0484.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">60 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1711.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">61 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_0213.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">62 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1665.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">63 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_0217.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">64 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1691.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">65 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_1709.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">66 / 68</div>
+      <img src="../images/month3/Kigoma/IMG_0214.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">67 / 68</div>
+      <img src="../images/month3/Kigoma/YFGZ5518.JPG" style="width:100%">
+    </div>
+<!-- PART2 -->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<!-- PART3 -->
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0171.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0202.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0166.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0173.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0182.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0168.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0188.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0175.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0179.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0169.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/EST/IMG_0190.JPG" style="width:100%" onclick="currentSlide(1)" alt="EST">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1652.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_0224.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02949.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02932.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02928.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02950.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02941.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1662.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1639.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02924.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02947.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1663.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1625.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1627.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02945.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1634.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1601.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1626.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02920.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02943.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02946.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02918.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_0223.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02921.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1659.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02923.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02919.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02922.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02931.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1623.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1624.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02940.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02937.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02939.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_0225.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02913.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1566.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_0227.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_0226.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/IMG_1650.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Gombe/DSC02929.JPG" style="width:100%" onclick="currentSlide(1)" alt="Gombe">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_0215.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1664.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1688.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1700.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1708.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_0216.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/QFEI0484.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1711.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_0213.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1665.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_0217.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1691.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_1709.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/IMG_0214.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/month3/Kigoma/YFGZ5518.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kigoma">
+    </div>
+<!-- PART3 -->
+  </div>
+</div>
+<!-- Wrapper -->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+
